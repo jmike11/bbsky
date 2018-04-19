@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { DataService } from './services/data.service';
+// import { SkyModule } from '@blackbaud/skyux/dist/core';
 
 @Component({
   selector: 'my-home',
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
     // console.log('ngoninit');
     this.dataService.getPosts().subscribe((posts) => {
       this.posts = posts;
-    console.log(this.posts[0].id);
+    // console.log(this.posts);
     });
   }
 }

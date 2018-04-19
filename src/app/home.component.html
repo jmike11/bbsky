@@ -20,12 +20,18 @@
   </p>
 
   <h1>Posts</h1>
-
   <!-- <div *ngFor="let post of posts">
     <h4>{{post.title}}</h4>
     <p>{{post.body}}</p>
   </div> -->
-  <sky-grid fit="scroll" [data]="posts">
+  <sky-grid [data]= "items">
+      <sky-grid-column
+      id="id"
+      field="title"
+      [heading]="asyncHeading | async">
+    </sky-grid-column>
+  </sky-grid>
+  <!-- <sky-grid fit="scroll" [data]="posts">
   <sky-grid-column
     id="ID"
     field="ID"
@@ -35,7 +41,7 @@
     id="title"
     field="title"
     heading="title">
-  </sky-grid-column>
+  </sky-grid-column> -->
   <!-- <sky-grid-column
     id="column3"
     field="column3"
@@ -47,7 +53,7 @@
     heading="Composite column"
     [template]="customColumnTemplate">
   </sky-grid-column> -->
-</sky-grid>
+<!-- </sky-grid> -->
 <ng-template
   let-row="row"
   let-value="value"
