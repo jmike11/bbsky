@@ -17,6 +17,7 @@
     "@blackbaud/skyux": "2.11.0"
   },
   "devDependencies": {
+    "@angular/cli": "^1.7.4",
     "@blackbaud/skyux-builder": "1.13.0"
   },
   "repository": {
