@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   public ngOnInit() {
-    console.log('ngoninit');
+    // console.log('ngoninit');
     this.dataService.getPosts().subscribe((posts) => {
       this.posts = posts;
     console.log(this.posts[0].id);
