@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     // console.log('ngoninit');
     this.dataService.getPosts().subscribe((posts) => {
       this.posts = posts;
-    // console.log(this.posts);
+     console.log(this.posts);
     });
   }
 }
