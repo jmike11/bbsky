@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-// import { SkyModule } from '@blackbaud/skyux/dist/core';
+
 import { DataService } from './services/data.service';
+
+import { SkyModalTestComponent } from './modal-test.component';
+import { SkyModalDemoFormComponent } from './modal/modal-demo-form.component';
 
 // Specify entry components, module-level providers, etc. here.
 @NgModule({
@@ -15,6 +18,6 @@ import { DataService } from './services/data.service';
    // SkyModule
   ],
   providers: [DataService],
-  entryComponents: []
+  entryComponents: [SkyModalDemoFormComponent]
 })
 export class AppExtrasModule { }
