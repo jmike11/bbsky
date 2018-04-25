@@ -25,7 +25,7 @@
     <p>{{post.body}}</p>
   </div> -->
    <button type="button" class="sky-btn sky-btn-primary" (click)="openModal2()">
-      Open large modal
+      Open Test modal
   </button>
   <sky-grid *ngIf="posts" [data]= "posts">
       <sky-grid-column
@@ -34,7 +34,7 @@
       heading="ID">
     </sky-grid-column>
     <sky-text-expand
-  [text]="longText">
+  text="longText">
 </sky-text-expand>
     <sky-grid-column
       id="id"

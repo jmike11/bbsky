@@ -7,7 +7,6 @@ import {
   SkyModalService,
   SkyModalCloseArgs
 } from '@blackbaud/skyux/dist/core';
-// import { SkyModule } from '@blackbaud/skyux/dist/core';
 
 @Component({
   selector: 'my-home',
@@ -30,32 +29,7 @@ export class HomeComponent implements OnInit {
     });
   }
   public openModal2() {
-
     console.log('testing....');
-    // SkyModalService.
-   // constructor(private modal: SkyModalService) { }
-   // let modal  = new SkyModalService();
-   // public openModal() {
-      const context = new SkyModalTestContext();
-      context.valueA = 'Hello';
-
-      const options: any = {
-        providers: [{ provide: SkyModalTestContext, useValue: context }],
-        ariaDescribedBy: 'docs-modal-content',
-        size: 'large'
-      };
-      let modalInstanceType = SkyModalTestComponent;
-
-    //  const modalInstance = this.modal.open(modalInstanceType, options);
-    //  modalInstance.closed.take(1).subscribe((result: SkyModalCloseArgs) => {
-    //    console.log(`Modal closed with reason: ${result.reason} and data: ${result.data}`);
-    //  });
-
-     // modalInstance.helpOpened.subscribe((helpKey: string) => {
-      //  context.eventMessage =  `
-     //     Modal header help was invoked with the following help key: ${helpKey}
-     //   `;
-    //  });
   }
 }
 
